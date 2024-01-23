@@ -30,7 +30,19 @@ public class DefaultController {
         modelAndView.addObject("summa", macins1.plus(macins2));
         modelAndView.addObject("starpiba", macins1.minus(macins3));
 
+
+        Money macins4 = new Money(10, 90);
+        Money macins5 = new Money(5, 90);
+        Money macins6 = macins4.minus(macins5);
+        modelAndView.addObject("starpiba2", macins6 = macins4.minus(macins5));
+
+        Money macins7 = new Money(10, 0);
+        Money macins8 = new Money(5, 0);
+        Boolean macins9 = macins7.lessThan(macins8);
+        modelAndView.addObject("mazak1", macins9);
+
         return modelAndView;
+
 
     }
     
